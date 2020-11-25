@@ -1,0 +1,37 @@
+Instructions for converting .rds to .csv in R
+
+The r code is simple and quick...but not yet automated to run on whole directories...
+
+# open terminal in folder with file(s)
+
+# open rds
+$ R
+ 
+> df <- readRDS("Muscle_skeletal-TF.rds")
+> write.csv(df, "Muscle_skeletal-TF.csv")
+
+To use the script, run in a terminal:
+$ Rscript convert.r
+
+
+Two Python Tools
+
+Tool 1: Converts Specific Individual Files 
+Tool 2: Converts Everything in The Folder
+
+
+instructions: Tool 1: Converts Specific Individual Files 
+# 1. Add the rds_to_csv_all_folder.py to the folder
+# 2. Open terminal in folder
+# 3. Run these lines in terminal first:
+#    $ pipenv install pyreadr ; pipenv shell
+#    $ python3 rds_to_csv.py
+# 4. follow prompt instructions
+
+
+instructions: Tool 2: Converts Everything in The Folder
+# 1. Add the rds_to_csv_all_folder.py to the folder
+# 2. Open terminal in folder
+# 3. Run these lines in terminal first:
+#    $ pipenv install pyreadr ; pipenv shell
+#    $ python3 rds_to_csv_all_folder.py

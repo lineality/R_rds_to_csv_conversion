@@ -35,3 +35,7 @@ instructions: Tool 2: Converts Everything in The Folder
 # 3. Run these lines in terminal first:
 #    $ pipenv install pyreadr ; pipenv shell
 #    $ python3 rds_to_csv_all_folder.py
+
+The beast of both worlds:
+py_r_csv.py is a pyscript that makes and runs R scripts
+working with all files
